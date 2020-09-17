@@ -23,8 +23,7 @@ public class ThreadVetor extends Thread{
 			double tempoTotal = tempoFinal - tempoInicial;
 			tempoTotal = tempoTotal / Math.pow(10, 9);
 			System.out.println("\nforeach ==> "+tempoTotal+" nano segundos.\n");
-		}
-		if (valor == 2) {
+		}else if (valor == 2) {
 			double tempoInicial = System.nanoTime();
 			for(int i = 0; i<vetor.length; i++) {
 				System.out.print(vetor[i] + " ");
